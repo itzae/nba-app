@@ -13,3 +13,7 @@ A
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 d
 4app/src/main/java/com/itgonca/nbaapp/MainActivity.kt,c\5\c5f085c3a30b4f174889afff55f4ef9446e8d6a5
+X
+(gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
