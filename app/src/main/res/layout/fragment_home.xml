@@ -3,16 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".features.app.MainActivity">
+    android:layout_height="match_parent">
 
-    <fragment
-        android:id="@+id/navHost"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTeams"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/app_navigation_graph"
-        />
-
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/item_team_layout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,10 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "com.itgonca.nbaapp"
         minSdkVersion 23
@@ -34,11 +38,20 @@ android {
 
 dependencies {
 
+    //Core
     implementation Dependencies.kotlin_lib
     implementation Dependencies.core_ktx_lib
+
+    //UI
     implementation Dependencies.appcompat_lib
     implementation Dependencies.material_design_lib
     implementation Dependencies.constraintlayout_lib
+
+    //Navigation
+    implementation Dependencies.navigation_fragment_lib
+    implementation Dependencies.navigation_ui_lib
+    
+    //Test
     testImplementation Dependencies.junit_lib
     androidTestImplementation Dependencies.ext_junit_lib
     androidTestImplementation Dependencies.espresso_core_lib

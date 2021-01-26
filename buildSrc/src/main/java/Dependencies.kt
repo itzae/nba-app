@@ -9,6 +9,7 @@ object Versions {
     const val junit_version = "4.13.1"
     const val ext_unit_version = "1.1.2"
     const val espresso_core_version = "3.3.0"
+    const val navigation_version = "2.3.2"
 }
 
 object Dependencies {
@@ -20,4 +21,6 @@ object Dependencies {
     const val junit_lib = "junit:junit:${Versions.junit_version}"
     const val ext_junit_lib = "androidx.test.ext:junit:${Versions.ext_unit_version}"
     const val espresso_core_lib = "androidx.test.espresso:espresso-core:${Versions.espresso_core_version}"
+    const val navigation_fragment_lib = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation_version}"
+    const val navigation_ui_lib = "androidx.navigation:navigation-ui-ktx:${Versions.navigation_version}"
 }

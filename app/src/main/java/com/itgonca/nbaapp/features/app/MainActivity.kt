@@ -1,7 +1,8 @@
-package com.itgonca.nbaapp
+package com.itgonca.nbaapp.features.app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.itgonca.nbaapp.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
