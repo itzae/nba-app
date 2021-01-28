@@ -19,6 +19,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "BASE_URL", '"https://api-nba-v1.p.rapidapi.com"'
+
     }
 
     buildTypes {
@@ -41,6 +44,7 @@ dependencies {
     //Core
     implementation Dependencies.kotlin_lib
     implementation Dependencies.core_ktx_lib
+    implementation Dependencies.activity_ktx_lib
 
     //UI
     implementation Dependencies.appcompat_lib
@@ -50,7 +54,20 @@ dependencies {
     //Navigation
     implementation Dependencies.navigation_fragment_lib
     implementation Dependencies.navigation_ui_lib
-    
+
+    //Retrofit
+    implementation Dependencies.retrofit2_lib
+    implementation Dependencies.retrofit2_gson_lib
+    implementation Dependencies.logging_interceptor_lib
+
+    //LiveData & ViewModel
+    implementation Dependencies.viewmodel_lib
+    implementation Dependencies.livedata_lib
+    implementation Dependencies.lifecycle_extensions_lib
+
+    //Coroutines
+    implementation Dependencies.kotlin_coroutines_lib
+
     //Test
     testImplementation Dependencies.junit_lib
     androidTestImplementation Dependencies.ext_junit_lib
