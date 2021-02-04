@@ -28,8 +28,6 @@ d
 4app/src/main/res/navigation/app_navigation_graph.xml,1\1\1176c3ded29895236c5792caf75ecf4fa6517fd4
 R
 "app/src/main/res/values/dimens.xml,c\3\c3c1811dec2dbad2deeafb9aad505ca9631da740
-Q
-!app/src/main/res/values/style.xml,b\2\b2434a2a7e966d15f305a9591990689caa3de139
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 Y
@@ -50,3 +48,17 @@ V
 &buildSrc/src/main/java/Dependencies.kt,e\8\e814710098f674890a8b6d2265ec0d2432e04a92
 
 Oapp/src/main/java/com/itgonca/nbaapp/features/home/ui/fragments/HomeFragment.kt,7\0\708d6318bb13352ceb9ff9fa561770af6f23aedb
+x
+Happ/src/main/java/com/itgonca/nbaapp/common/base/BaseViewModelFactory.kt,d\c\dc0bb849f3461cbafbd522321aac28790ccc2563
+q
+Aapp/src/main/java/com/itgonca/nbaapp/utils/extensions/Fragment.kt,9\f\9f359f5b8ed313ef1103f69d953484948ba68f0f
+{
+Kapp/src/main/java/com/itgonca/nbaapp/features/home/domain/model/TeamItem.kt,0\8\08f84c60a74462cbb1841d68f63f8dc96ea98adc
+p
+@app/src/main/java/com/itgonca/nbaapp/utils/extensions/StateUi.kt,d\7\d7280a6b61a1acb4b165cf33ff0e5d306424ec02
+ƒ
+Sapp/src/main/java/com/itgonca/nbaapp/common/presentation/ui/dialogs/LoaderDialog.kt,a\8\a8ac3e2f31e88cdbe81034854bde7615cb02ebd9
+p
+@app/src/main/java/com/itgonca/nbaapp/common/base/BaseActivity.kt,4\0\40825c1e31f618933d917fcf4028d1ac9b6b250b
+p
+@app/src/main/java/com/itgonca/nbaapp/common/base/BaseFragment.kt,f\b\fb92cec579f2124282d07915e91ec6afb117eaa2

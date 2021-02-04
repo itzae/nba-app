@@ -50,6 +50,7 @@ dependencies {
     implementation Dependencies.appcompat_lib
     implementation Dependencies.material_design_lib
     implementation Dependencies.constraintlayout_lib
+    implementation Dependencies.lottie_lib
 
     //Navigation
     implementation Dependencies.navigation_fragment_lib
