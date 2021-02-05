@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -51,6 +52,8 @@ dependencies {
     implementation Dependencies.material_design_lib
     implementation Dependencies.constraintlayout_lib
     implementation Dependencies.lottie_lib
+    implementation Dependencies.glide_lib
+    annotationProcessor Dependencies.glide_processor_lib
 
     //Navigation
     implementation Dependencies.navigation_fragment_lib

@@ -22,8 +22,6 @@ q
 Aapp/src/main/java/com/itgonca/nbaapp/features/app/MainActivity.kt,d\2\d28b7f947ed1517e951d4c26c2854d879b5f16c4
 Y
 )app/src/main/res/layout/fragment_home.xml,3\1\31c5880846ef63ff1963efbe141ddfd56680bb19
-\
-,app/src/main/res/layout/item_team_layout.xml,d\4\d4d8056eab0c868103a7c6ef5c9e1371cdd48e1b
 d
 4app/src/main/res/navigation/app_navigation_graph.xml,1\1\1176c3ded29895236c5792caf75ecf4fa6517fd4
 R
@@ -62,3 +60,15 @@ p
 @app/src/main/java/com/itgonca/nbaapp/common/base/BaseActivity.kt,4\0\40825c1e31f618933d917fcf4028d1ac9b6b250b
 p
 @app/src/main/java/com/itgonca/nbaapp/common/base/BaseFragment.kt,f\b\fb92cec579f2124282d07915e91ec6afb117eaa2
+Y
+)app/src/main/res/layout/dialog_loader.xml,3\0\30106682ab62b1370827f09c536a9c9a913ec4ef
+[
++app/src/main/res/raw/loader_basketball.json,8\0\80057c1143e9134894789cc4888e1fa6872ab585
+Q
+!app/src/main/res/values/style.xml,b\2\b2434a2a7e966d15f305a9591990689caa3de139
+~
+Napp/src/main/java/com/itgonca/nbaapp/features/home/ui/adapters/TeamsAdapter.kt,5\5\55d87f50ee71be342a05e12e9abeb8b79856f568
+Å
+Qapp/src/main/java/com/itgonca/nbaapp/features/home/ui/adapters/TeamsViewHolder.kt,3\4\34e9af218c649255c47329b3cbfdce4c8e8c2b29
+r
+Bapp/src/main/java/com/itgonca/nbaapp/utils/extensions/ImageView.kt,6\6\66021870810f13c8e2406a0d41dda4c4426df5b3

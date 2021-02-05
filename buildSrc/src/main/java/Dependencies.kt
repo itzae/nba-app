@@ -1,5 +1,3 @@
-import Versions.lottie_version
-import sun.misc.Version
 
 object Versions {
     const val kotlin_version = "1.3.72"
@@ -18,6 +16,7 @@ object Versions {
     const val fragment_version = "1.2.5"
     const val loggin_interceptor_version = "4.9.0"
     const val lottie_version = "3.4.0"
+    const val glide_version = "4.12.0"
 }
 
 object Dependencies {
@@ -40,5 +39,7 @@ object Dependencies {
     const val activity_ktx_lib = "androidx.activity:activity-ktx:${Versions.activity_version}"
     const val fragment_ktx_lib = "androidx.fragment:fragment-ktx:${Versions.fragment_version}"
     const val logging_interceptor_lib = "com.squareup.okhttp3:logging-interceptor:${Versions.loggin_interceptor_version}"
-    const val lottie_lib = "com.airbnb.android:lottie:$lottie_version"
+    const val lottie_lib = "com.airbnb.android:lottie:${Versions.lottie_version}"
+    const val glide_lib = "com.github.bumptech.glide:glide:${Versions.glide_version}"
+    const val glide_processor_lib = "com.github.bumptech.glide:compiler:${Versions.glide_version}"
 }

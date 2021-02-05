@@ -10,18 +10,26 @@ import androidx.lifecycle.Observer
 import com.itgonca.nbaapp.common.base.BaseFragment
 import com.itgonca.nbaapp.databinding.FragmentHomeBinding
 import com.itgonca.nbaapp.features.home.data.network.repository.TeamsRepository
+import com.itgonca.nbaapp.features.home.ui.adapters.TeamsAdapter
 import com.itgonca.nbaapp.features.home.ui.viewmodel.HomeViewModel
 import com.itgonca.nbaapp.utils.extensions.StateUI
 import com.itgonca.nbaapp.utils.extensions.getViewModel
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : BaseFragment() {
 
     private var _binding: FragmentHomeBinding? = null
+    private lateinit var teamsAdapter: TeamsAdapter
 
     private val binding get() = _binding!!
 
     private val viewModel: HomeViewModel by lazy {
         getViewModel { (HomeViewModel(TeamsRepository())) }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        teamsAdapter = TeamsAdapter()
     }
 
     override fun onCreateView(
@@ -44,11 +52,16 @@ class HomeFragment : BaseFragment() {
         _binding = null
     }
 
+    /**
+     * This method initialize the observers of the [HomeViewModel]
+     */
     private fun initObservers() {
         viewModel.listTeams.observe(viewLifecycleOwner, Observer {
             when (it) {
                 is StateUI.Success -> {
                     getActivityContext().hideLoader()
+                    teamsAdapter.submitList(it.data)
+                    binding.rvTeams.adapter = teamsAdapter
                     Log.i("TAG", "initObservers: ${it.data}")
                 }
                 is StateUI.Error -> {

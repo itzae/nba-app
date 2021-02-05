@@ -20,12 +20,16 @@ class HomeViewModel(private val teamsRepository: TeamsRepository) : ViewModel() 
     val listTeams: LiveData<StateUI<List<TeamItem>>>
         get() = _listTeams
 
+    /**
+     * This method obtains a list of equipment according to the selected conference, and later
+     * processes the information to send it to the view through the observer [listTeams]
+     */
     fun getTeams() {
         viewModelScope.launch {
             try {
                 _listTeams.postValue(StateUI.Loading)
                 val data =
-                    withContext(Dispatchers.IO) { teamsRepository.getTeamsPerConference("West") }
+                    withContext(Dispatchers.IO) { teamsRepository.getTeamsPerConference("East") }
                 val listItems = data.api.teams.map { team -> team.toTeamItem() }
                 _listTeams.postValue(StateUI.Success(listItems))
                 Log.i("TAG", "getTeams: $data")
