@@ -17,6 +17,8 @@ object Versions {
     const val loggin_interceptor_version = "4.9.0"
     const val lottie_version = "3.4.0"
     const val glide_version = "4.12.0"
+    const val hilt_version = "2.35.1"
+    const val hilt_viewmodel_version = "1.0.0-alpha01"
 }
 
 object Dependencies {
@@ -42,4 +44,9 @@ object Dependencies {
     const val lottie_lib = "com.airbnb.android:lottie:${Versions.lottie_version}"
     const val glide_lib = "com.github.bumptech.glide:glide:${Versions.glide_version}"
     const val glide_processor_lib = "com.github.bumptech.glide:compiler:${Versions.glide_version}"
+    const val hilt_android_lib = "com.google.dagger:hilt-android:${Versions.hilt_version}"
+    const val hilt_compiler_lib = "com.google.dagger:hilt-android-compiler:${Versions.hilt_version}"
+    const val class_path_hilt = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt_version}"
+    const val hilt_viewmodel_lib = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hilt_viewmodel_version}"
+    const val hilt_android_compiler_lib = "androidx.hilt:hilt-compiler:${Versions.hilt_viewmodel_version}"
 }

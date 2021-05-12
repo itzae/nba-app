@@ -1,11 +1,12 @@
 package com.itgonca.nbaapp.features.app
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.itgonca.nbaapp.R
 import com.itgonca.nbaapp.common.base.BaseActivity
 import com.itgonca.nbaapp.common.presentation.ui.dialogs.LoaderDialog
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : BaseActivity() {
 
     private var dialogLoader: LoaderDialog? = null

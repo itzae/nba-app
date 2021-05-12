@@ -5,17 +5,16 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.itgonca.nbaapp.common.base.BaseFragment
 import com.itgonca.nbaapp.databinding.FragmentHomeBinding
-import com.itgonca.nbaapp.features.home.data.network.repository.TeamsRepository
 import com.itgonca.nbaapp.features.home.ui.adapters.TeamsAdapter
 import com.itgonca.nbaapp.features.home.ui.viewmodel.HomeViewModel
 import com.itgonca.nbaapp.utils.extensions.StateUI
-import com.itgonca.nbaapp.utils.extensions.getViewModel
-import kotlinx.android.synthetic.main.fragment_home.*
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomeFragment : BaseFragment() {
 
     private var _binding: FragmentHomeBinding? = null
@@ -23,9 +22,7 @@ class HomeFragment : BaseFragment() {
 
     private val binding get() = _binding!!
 
-    private val viewModel: HomeViewModel by lazy {
-        getViewModel { (HomeViewModel(TeamsRepository())) }
-    }
+    private val viewModel :HomeViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,7 +40,8 @@ class HomeFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel.getTeams()
+        viewModel.getTeams("East")
+        initUI()
         initObservers()
     }
 
@@ -52,11 +50,20 @@ class HomeFragment : BaseFragment() {
         _binding = null
     }
 
+    private fun initUI(){
+        binding.chgConference.setOnCheckedChangeListener { _, checkedId ->
+            when(checkedId){
+                binding.chEast.id -> viewModel.getTeams("East")
+                binding.chWest.id -> viewModel.getTeams("West")
+            }
+        }
+    }
+
     /**
      * This method initialize the observers of the [HomeViewModel]
      */
     private fun initObservers() {
-        viewModel.listTeams.observe(viewLifecycleOwner, Observer {
+       viewModel.listTeams.observe(viewLifecycleOwner, Observer {
             when (it) {
                 is StateUI.Success -> {
                     getActivityContext().hideLoader()
