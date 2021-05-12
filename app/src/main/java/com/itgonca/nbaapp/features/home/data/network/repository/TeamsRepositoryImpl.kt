@@ -1,6 +1,5 @@
 package com.itgonca.nbaapp.features.home.data.network.repository
 
-import com.itgonca.nbaapp.common.data.network.RetrofitInstance
 import com.itgonca.nbaapp.features.home.data.network.api.TeamsApi
 import com.itgonca.nbaapp.features.home.data.network.model.TeamsResponse
 import javax.inject.Inject
