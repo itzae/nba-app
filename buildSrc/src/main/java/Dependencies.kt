@@ -19,6 +19,7 @@ object Versions {
     const val glide_version = "4.12.0"
     const val hilt_version = "2.35.1"
     const val hilt_viewmodel_version = "1.0.0-alpha01"
+    const val mockito_kotlin_version = "3.2.0"
 }
 
 object Dependencies {
@@ -49,4 +50,5 @@ object Dependencies {
     const val class_path_hilt = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt_version}"
     const val hilt_viewmodel_lib = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hilt_viewmodel_version}"
     const val hilt_android_compiler_lib = "androidx.hilt:hilt-compiler:${Versions.hilt_viewmodel_version}"
+    const val mockito_kotlin_version = "org.mockito.kotlin:mockito-kotlin:${Versions.mockito_kotlin_version}"
 }

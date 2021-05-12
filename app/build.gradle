@@ -83,6 +83,7 @@ dependencies {
 
     //Test
     testImplementation Dependencies.junit_lib
+    testImplementation Dependencies.mockito_kotlin_version
     androidTestImplementation Dependencies.ext_junit_lib
     androidTestImplementation Dependencies.espresso_core_lib
 }

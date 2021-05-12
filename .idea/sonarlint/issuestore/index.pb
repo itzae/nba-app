@@ -29,8 +29,6 @@ Bapp/src/main/java/com/itgonca/nbaapp/utils/extensions/ImageView.kt,6\6\6602187
 Napp/src/main/java/com/itgonca/nbaapp/features/home/ui/adapters/TeamsAdapter.kt,5\5\55d87f50ee71be342a05e12e9abeb8b79856f568
 Å
 Qapp/src/main/java/com/itgonca/nbaapp/features/home/ui/adapters/TeamsViewHolder.kt,3\4\34e9af218c649255c47329b3cbfdce4c8e8c2b29
-{
-Kapp/src/main/java/com/itgonca/nbaapp/features/home/domain/model/TeamItem.kt,0\8\08f84c60a74462cbb1841d68f63f8dc96ea98adc
 Ü
 Vapp/src/main/java/com/itgonca/nbaapp/features/home/data/network/model/TeamsResponse.kt,b\b\bb16fac43a342f94ec8cb7906f3a2985c4d1e60a
 |
