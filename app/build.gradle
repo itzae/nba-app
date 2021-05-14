@@ -24,7 +24,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         buildConfigField "String", "BASE_URL", '"https://api-nba-v1.p.rapidapi.com"'
-        buildConfigField "String", "API_KEY" , '"INSERT_API_KEY"'
+        buildConfigField "String", "API_KEY" , '"a6838d14abmsh7639ba8abedb803p1f3c94jsn86d70d44c12d"'
     }
 
     buildTypes {
