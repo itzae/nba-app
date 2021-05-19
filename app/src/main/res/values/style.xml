@@ -81,12 +81,10 @@
     </style>
 
     <style name="TitleBoldStyle" parent="TextAppearance.MdcTypographyStyles.Headline5">
-        <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="fontFamily">@font/roboto_bold</item>
     </style>
 
     <style name="SubtitleBoldStyle" parent="TextAppearance.MdcTypographyStyles.Subtitle1">
-        <item name="android:textColor">@color/black</item>
         <item name="fontFamily">@font/roboto_bold</item>
     </style>
 
