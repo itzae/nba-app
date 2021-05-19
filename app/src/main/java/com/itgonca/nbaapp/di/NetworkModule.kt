@@ -6,7 +6,6 @@ import com.itgonca.nbaapp.features.home.data.network.api.TeamsApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
-import dagger.hilt.android.internal.managers.ApplicationComponentManager
 import dagger.hilt.components.SingletonComponent
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -19,13 +18,12 @@ import javax.inject.Singleton
 object NetworkModule {
     @Singleton
     @Provides
-    fun providerTeamsApi(httpClient: OkHttpClient.Builder): TeamsApi {
+    fun providerBuildRetrofit(httpClient: OkHttpClient.Builder): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().create()))
             .client(httpClient.build())
             .build()
-            .create(TeamsApi::class.java)
     }
 
     @Singleton
@@ -33,4 +31,9 @@ object NetworkModule {
     fun providerHttpClient() = OkHttpClient.Builder().addInterceptor(HttpLoggingInterceptor().apply {
         if (BuildConfig.DEBUG) level = HttpLoggingInterceptor.Level.BODY
     })
+
+    @Singleton
+    @Provides
+    fun providerTeamsService(builder:Retrofit):TeamsApi = builder.create(TeamsApi::class.java)
+
 }

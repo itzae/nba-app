@@ -13,8 +13,6 @@ X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 R
 "app/src/main/res/values/dimens.xml,c\3\c3c1811dec2dbad2deeafb9aad505ca9631da740
-Y
-)app/src/main/res/layout/activity_main.xml,7\6\76b07e40f24cce093536731477540f12e7da3cb6
 q
 Aapp/src/main/java/com/itgonca/nbaapp/utils/extensions/Fragment.kt,9\f\9f359f5b8ed313ef1103f69d953484948ba68f0f
 p
@@ -31,8 +29,6 @@ Napp/src/main/java/com/itgonca/nbaapp/features/home/ui/adapters/TeamsAdapter.kt
 Qapp/src/main/java/com/itgonca/nbaapp/features/home/ui/adapters/TeamsViewHolder.kt,3\4\34e9af218c649255c47329b3cbfdce4c8e8c2b29
 Ü
 Vapp/src/main/java/com/itgonca/nbaapp/features/home/data/network/model/TeamsResponse.kt,b\b\bb16fac43a342f94ec8cb7906f3a2985c4d1e60a
-|
-Lapp/src/main/java/com/itgonca/nbaapp/features/home/data/network/model/Api.kt,1\c\1c7b0c81438623989f95dc1504d837e02e5e3183
 p
 @app/src/main/java/com/itgonca/nbaapp/common/base/BaseActivity.kt,4\0\40825c1e31f618933d917fcf4028d1ac9b6b250b
 É
@@ -49,16 +45,10 @@ g
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 r
 Bapp/src/main/java/com/itgonca/nbaapp/common/base/NbaApplication.kt,0\3\03d2391b47cc9dbb37bd2c5a23e9410c537e5de4
-h
-8app/src/main/java/com/itgonca/nbaapp/di/NetworkModule.kt,a\e\ae73b515a71e33e6e9be2e8246d2bb2b24de4987
 q
 Aapp/src/main/java/com/itgonca/nbaapp/features/app/MainActivity.kt,d\2\d28b7f947ed1517e951d4c26c2854d879b5f16c4
-
-Oapp/src/main/java/com/itgonca/nbaapp/features/home/ui/fragments/HomeFragment.kt,7\0\708d6318bb13352ceb9ff9fa561770af6f23aedb
 Ä
 Papp/src/main/java/com/itgonca/nbaapp/features/home/ui/viewmodel/HomeViewModel.kt,3\d\3db830c5580c1a6586981cfa5b89522ea98c3b11
-o
-?app/src/main/java/com/itgonca/nbaapp/di/TeamRepositoryModule.kt,5\d\5defc19895742b6ac68278beca05b21f07801450
 ç
 ]app/src/main/java/com/itgonca/nbaapp/features/home/data/network/repository/TeamsRepository.kt,1\4\142233f1ba40e5b9b9dd93b90663439aab357792
 {
@@ -66,7 +56,5 @@ Kapp/src/main/java/com/itgonca/nbaapp/features/home/domain/model/TeamItem.kt,0\
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-V
-&buildSrc/src/main/java/Dependencies.kt,e\8\e814710098f674890a8b6d2265ec0d2432e04a92
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e

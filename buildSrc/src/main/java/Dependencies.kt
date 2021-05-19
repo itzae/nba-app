@@ -36,6 +36,7 @@ object Dependencies {
     const val retrofit2_lib = "com.squareup.retrofit2:retrofit:${Versions.retrofit2_version}"
     const val retrofit2_gson_lib = "com.squareup.retrofit2:converter-gson:${Versions.retrofit2_version}"
     const val kotlin_coroutines_lib = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutine_version}"
+    const val kotlin_coroutines_test_lib = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutine_version}"
     const val viewmodel_lib = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle_version}"
     const val livedata_lib = "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle_version}"
     const val lifecycle_extensions_lib = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle_version}"

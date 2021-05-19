@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import com.itgonca.nbaapp.common.base.BaseFragment
 import com.itgonca.nbaapp.databinding.FragmentHomeBinding
 import com.itgonca.nbaapp.features.home.ui.adapters.TeamsAdapter
@@ -63,7 +62,7 @@ class HomeFragment : BaseFragment() {
      * This method initialize the observers of the [HomeViewModel]
      */
     private fun initObservers() {
-       viewModel.listTeams.observe(viewLifecycleOwner, Observer {
+       viewModel.listTeams.observe(viewLifecycleOwner, {
             when (it) {
                 is StateUI.Success -> {
                     getActivityContext().hideLoader()
