@@ -79,4 +79,20 @@
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textSize">10sp</item>
     </style>
+
+    <style name="TitleBoldStyle" parent="TextAppearance.MdcTypographyStyles.Headline5">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="SubtitleBoldStyle" parent="TextAppearance.MdcTypographyStyles.Subtitle1">
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!--Style UI-->
+    <style name="FullScreenDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
 </resources>

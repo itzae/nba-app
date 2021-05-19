@@ -1,11 +1,18 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
+
+    buildFeatures {
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId "com.itgonca.nbaapp"
@@ -15,6 +22,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField "String", "BASE_URL", '"https://api-nba-v1.p.rapidapi.com"'
+        buildConfigField "String", "API_KEY" , '"a6838d14abmsh7639ba8abedb803p1f3c94jsn86d70d44c12d"'
     }
 
     buildTypes {
@@ -34,12 +44,47 @@ android {
 
 dependencies {
 
+    //Core
     implementation Dependencies.kotlin_lib
     implementation Dependencies.core_ktx_lib
+    implementation Dependencies.activity_ktx_lib
+    implementation Dependencies.fragment_ktx_lib
+
+    //UI
     implementation Dependencies.appcompat_lib
     implementation Dependencies.material_design_lib
     implementation Dependencies.constraintlayout_lib
+    implementation Dependencies.lottie_lib
+    implementation Dependencies.glide_lib
+    annotationProcessor Dependencies.glide_processor_lib
+
+    //DI
+    implementation Dependencies.hilt_android_lib
+    implementation Dependencies.hilt_viewmodel_lib
+    kapt Dependencies.hilt_compiler_lib
+    kapt Dependencies.hilt_android_compiler_lib
+
+    //Navigation
+    implementation Dependencies.navigation_fragment_lib
+    implementation Dependencies.navigation_ui_lib
+
+    //Retrofit
+    implementation Dependencies.retrofit2_lib
+    implementation Dependencies.retrofit2_gson_lib
+    implementation Dependencies.logging_interceptor_lib
+
+    //LiveData & ViewModel
+    implementation Dependencies.viewmodel_lib
+    implementation Dependencies.livedata_lib
+    implementation Dependencies.lifecycle_extensions_lib
+
+    //Coroutines
+    implementation Dependencies.kotlin_coroutines_lib
+
+    //Test
     testImplementation Dependencies.junit_lib
+    testImplementation Dependencies.mockito_kotlin_version
+    testImplementation Dependencies.kotlin_coroutines_test_lib
     androidTestImplementation Dependencies.ext_junit_lib
     androidTestImplementation Dependencies.espresso_core_lib
 }

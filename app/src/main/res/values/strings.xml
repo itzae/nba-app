@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">nba app</string>
+    <string name="app_name">NBA App</string>
+    <string name="select_a_conference_label">Selecciona una conferencia</string>
 </resources>
